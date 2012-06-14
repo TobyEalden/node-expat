@@ -4,7 +4,7 @@
   },
   'targets': [
     {
-      'target_name': 'node-expat',
+      'target_name': 'expat',
       'sources': [
         'node-expat.cc'
       ],
