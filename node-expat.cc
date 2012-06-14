@@ -440,8 +440,14 @@ private:
 
 
 
-extern "C" void init(Handle<Object> target)
+extern "C" 
 {
-  HandleScope scope;
-  Parser::Initialize(target);
+	void init(Handle<Object> target)
+	{
+		HandleScope scope;
+		Parser::Initialize(target);
+	}
+
+	// Toby
+	NODE_MODULE(expat,init);
 }
